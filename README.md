@@ -43,7 +43,7 @@ To install and run the Social Media Dashboard App, follow these steps:
 5. Build and start the app:
 
    ```
-   npm start
+   npm run dev
    ```
 
 6. Open your web browser and visit `http://localhost:3000` to access the Social Media Dashboard App.
