@@ -1,11 +1,11 @@
 // Import the necessary SVG icons and the useState hook from React
 import { dataFake } from "../../api/api";
-import { ReactComponent as DownSvg } from "../../assets/icon-down.svg";
-import { ReactComponent as UpSvg } from "../../assets/icon-up.svg";
-import { ReactComponent as FacebookSvg } from "../../assets/icon-facebook.svg";
-import { ReactComponent as InstagramSvg } from "../../assets/icon-instagram.svg";
-import { ReactComponent as TwitterSvg } from "../../assets/icon-twitter.svg";
-import { ReactComponent as YoutubeSvg } from "../../assets/icon-youtube.svg";
+import DownSvg from "../../assets/icon-down.svg?react";
+import UpSvg from "../../assets/icon-up.svg?react";
+import FacebookSvg from '../../assets/icon-facebook.svg?react';
+import InstagramSvg from "../../assets/icon-instagram.svg?react";
+import TwitterSvg from "../../assets/icon-twitter.svg?react";
+import YoutubeSvg from "../../assets/icon-youtube.svg?react";
 import { useState } from 'react'
 
 // Import the styles for this component
@@ -15,6 +15,7 @@ import "./styles.scss";
 type Props = {
   borderTheme?: string;
   data: dataFake;
+  key:string
 };
 
 // This function takes a string representing a social media platform
@@ -48,7 +49,7 @@ function calculateNumbers(numbers: dataFake) {
 }
 
 // This is the main component that renders the followers card
-export function FollowersCard({ borderTheme, data }: Props) {
+export function FollowersCard({ borderTheme, data, key }: Props) {
   // Initialize the state with a null value
   const [latestNumbers] = useState<dataFake | null>(null);
 

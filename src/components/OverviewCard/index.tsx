@@ -1,9 +1,9 @@
-import { ReactComponent as DownSvg } from "../../assets/icon-down.svg";
-import { ReactComponent as UpSvg } from "../../assets/icon-up.svg";
-import { ReactComponent as FacebookSvg } from "../../assets/icon-facebook.svg";
-import { ReactComponent as InstagramSvg } from "../../assets/icon-instagram.svg";
-import { ReactComponent as TwitterSvg } from "../../assets/icon-twitter.svg";
-import { ReactComponent as YoutubeSvg } from "../../assets/icon-youtube.svg";
+import DownSvg from "../../assets/icon-down.svg?react";
+import UpSvg from "../../assets/icon-up.svg?react";
+import FacebookSvg from "../../assets/icon-facebook.svg?react";
+import InstagramSvg from "../../assets/icon-instagram.svg?react";
+import TwitterSvg from "../../assets/icon-twitter.svg?react";
+import YoutubeSvg from "../../assets/icon-youtube.svg?react";
 import { fakeOverviewData } from "../../api/api";
 import { useState } from "react";
 
@@ -12,6 +12,7 @@ import "./styles.scss";
 // Define the type for the props passed to this component
 type Props = {
   data: fakeOverviewData;
+  key:string
 };
 
 // Helper function to calculate random numbers for the component

@@ -14,10 +14,12 @@ function App() {
 
   // Return the app's JSX
   return (
-    <div id="container-primary" className={theme}>
-      <div id="header-top" />
-      <Router />
-    </div>
+    <>
+      <div id="container-primary" className={theme}>
+        <div id="header-top" />
+        <Router />
+      </div>
+    </>
   );
 }
 
